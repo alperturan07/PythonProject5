@@ -396,7 +396,7 @@ while main_flag:
 
             elif Customers_choice=="7":
                 customer_mail = str(input("Please enter your email address:"))
-                data = load_order("order.json")
+                data = load_order("orders.json")
                 Clist= list_past_orders(data,customer_mail)
                 if len(Clist) != 0:
                     for item in Clist:
@@ -407,6 +407,7 @@ while main_flag:
 
             elif Customers_choice=="8":
                 exit_flag=True
+
 
 
 
